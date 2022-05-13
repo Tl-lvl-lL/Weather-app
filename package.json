@@ -1,17 +1,27 @@
 {
-  "name": "weather-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "AXIOS",
-    "Nodejs",
-    "Application",
-    "Console"
-  ],
-  "author": "Mariano",
-  "license": "MIT"
+    "name": "weather-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "nodemon index.js"
+    },
+    "keywords": [
+        "AXIOS",
+        "Nodejs",
+        "Application console"
+    ],
+    "author": "Mariano",
+    "license": "MIT",
+    "devDependencies": {
+        "axios": "^0.27.2",
+        "inquirer": "^8.2.4",
+        "node-fetch": "^3.2.4",
+        "nodemon": "^2.0.16",
+        "yargs": "^17.5.0"
+    },
+    "dependencies": {
+        "express": "^4.18.1"
+    }
 }
