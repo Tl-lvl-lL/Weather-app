@@ -2,7 +2,8 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 
-const __filename = fileURLToPath(import.meta.url);
+const __url = fileURLToPath(import.meta.url);
+let urlPared = path.parse(__url);
 
 let app = express();
 app.listen(3000, () => {
@@ -10,7 +11,5 @@ app.listen(3000, () => {
 });
 
 app.get("/", (req, res) => {
-    res.sendFile(
-        "/home/mariano/Code/backend_projects/weather-app/src/index.html"
-    );
+    res.sendFile(path.resolve(__url, "../index.html"));
 });
